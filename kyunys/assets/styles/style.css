@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #d7b8f3;
+    color: #1d2236;
+    line-height: 1.6;
+}
+
+p {
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Header */
+
+.jumbotron {
+    background: linear-gradient(
+        135deg, #1d2236 0%, #6e5aae 40%, #d7b8f3 100%
+    );
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.jumbotron-logo {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.jumbotron-text {
+    text-align: left;
+}
+
+.jumbotron h1 {
+    color: #ddf7ff;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #1d2236;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-container {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid #aee8ff;
+    box-shadow:
+        0 0 10px rgba(215, 184, 243, 0.5);
+    flex-shrink: 0;
+    object-fit: cover;
+    background-color: #ddf7ff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ddf7ff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #aee8ff;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#content {
+    flex: 2.5;
+}
+
+aside {
+    flex: 1.5;
+}
+
+.profile {
+    position: sticky;
+    top: 90px;
+}
+
+/* Card */
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 1px solid #f6d4e4;
+    box-shadow:
+        0 8px 20px rgba(174, 232, 255, 0.2),
+        0 4px 10px rgba(215, 184, 243, 0.15);
+}
+
+.card h2 {
+    color: #6e5aae;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #1d2236;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+/* Images */
+
+.home-image {
+    width: 50%;
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 15px;
+    border: 3px solid #aee8ff;
+    box-shadow:
+        0 0 10px rgba(215, 184, 243, 0.5);
+}
+
+.makassar-image {
+    width: 80%;
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 15px;
+    border: 3px solid #aee8ff;
+    box-shadow:
+        0 0 10px rgba(215, 184, 243, 0.5);
+}
+
+.hobby-image {
+    width: 80%;
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 15px;
+    border: 3px solid #aee8ff;
+    box-shadow:
+        0 0 10px rgba(215, 184, 243, 0.5);
+}
+
+/* Profile */
+
+.profile header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.profile img {
+    width: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    border: 4px solid #aee8ff;
+    box-shadow:
+        0 0 15px rgba(215, 184, 243, 0.5);
+}
+
+.profile figcaption {
+    text-align: center;
+    margin-top: 10px;
+    color: #6e5aae;
+    font-style: italic;
+}
+
+/* Table */
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-spacing: 0 10px;
+}
+
+th {
+    text-align: left;
+    width: 35%;
+    padding: 8px;
+    vertical-align: top;
+    color: #6e5aae;
+}
+
+td {
+    padding: 8px;
+    vertical-align: top;
+}
+
+/* Footer */
+
+footer {
+    background: linear-gradient(
+        90deg,
+        #1d2236,
+        #6e5aae
+    );
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Selection */
+
+::selection {
+    background-color: #d7b8f3;
+    color: #1d2236;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fafafc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #aee8ff;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1d2236;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
